@@ -1,0 +1,15 @@
+global:
+  security:
+    allowInsecureImages: true
+image:
+  registry: dockerhub.timeweb.cloud
+  repository: keycloak/keycloak
+  tag: 26.0.7
+postgresql:
+  enabled: false
+externalDatabase:
+  host: postgres
+  user: keycloak
+  password: keycloakpass
+  database: keycloakdb
+  port: 5432

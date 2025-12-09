@@ -1,0 +1,13 @@
+fullnameOverride: postgres
+
+primary:
+  persistence:
+    enabled: false
+
+global:
+  defaultStorageClass: "standard"
+  postgresql: 
+    auth:
+      username: postgres
+      password: postgres
+      database: postgres

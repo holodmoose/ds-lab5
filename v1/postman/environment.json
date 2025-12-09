@@ -4,32 +4,32 @@
 	"values": [
 		{
 			"key": "serviceUrl",
-			"value": "",
+			"value": "http://77.233.220.70:80",
 			"enabled": true
 		},
 		{
 			"key": "identityProviderUrl",
-			"value": "",
+			"value": "http://77.233.220.70/realms/ds/protocol/openid-connect/token",
 			"enabled": true
 		},
 		{
 			"key": "username",
-			"value": "",
+			"value": "user",
 			"enabled": true
 		},
 		{
 			"key": "password",
-			"value": "",
+			"value": "user",
 			"enabled": true
 		},
 		{
 			"key": "clientId",
-			"value": "",
+			"value": "ds",
 			"enabled": true
 		},
 		{
 			"key": "clientSecret",
-			"value": "",
+			"value": "DSrFTJQIogtflWlTcS9mtoZVia5IoNes",
 			"enabled": true
 		}
 	],

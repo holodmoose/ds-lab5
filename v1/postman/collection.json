@@ -59,25 +59,21 @@
 									"type": "text"
 								},
 								{
-									"key": "clientId",
+									"key": "client_id",
 									"value": "{{clientId}}",
 									"type": "text"
 								},
 								{
-									"key": "clientSecret",
+									"key": "client_secret",
 									"value": "{{clientSecret}}",
 									"type": "text"
 								}
 							]
 						},
 						"url": {
-							"raw": "{{identityProviderUrl}}/oauth/token",
+							"raw": "{{identityProviderUrl}}",
 							"host": [
 								"{{identityProviderUrl}}"
-							],
-							"path": [
-								"oauth",
-								"token"
 							]
 						}
 					},
@@ -136,6 +132,7 @@
 							"script": {
 								"exec": [
 									"pm.test(\"Получить список рейсов\", () => {",
+									"    console.log(pm.request);",
 									"    pm.response.to.have.status(200)",
 									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.contains(\"application/json\");",
 									"",
